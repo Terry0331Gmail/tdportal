@@ -1,0 +1,563 @@
+@charset "UTF-8";
+
+
+/*content首頁區段--------------*/
+#content_public {
+    width: 100%;
+    height: 82vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*content內頁區段--------------*/
+#content_list_public {
+    margin: auto;
+}
+
+
+/*.contentsearch_submit{
+	position: absolute;
+	right: 20px;
+	bottom: 5px;
+}*/
+
+/*popup區段--------------*/
+
+#popup_backstage, #popup_login {
+    position: absolute;
+    top: 200px;
+    left: calc(50% - 170px);
+    width: 300px;
+    height: 280px;
+    border: 0px;
+    border-radius: 15px;
+    background-color: #479573;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 16px;
+    box-shadow: 3px 3px 5px 0px #444444;
+    text-align: center;
+    z-index: 99;
+}
+
+    #popup_backstage input, #popup_login input {
+        position: relative;
+        border-radius: 20px;
+        border: 2px solid #999999;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #popup_backstage hr {
+        margin-top: 20px;
+    }
+
+/*圖像說明*/
+.tooltip_public {
+    position: relative;
+    display: inline-block;
+}
+
+    .tooltip_public .tooltiptext_public {
+        visibility: hidden;
+        background-color: #479573;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        width: 80px;
+        margin-left: -40px;
+        top: 100%;
+        left: 0%;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 99;
+    }
+
+        .tooltip_public .tooltiptext_public::after {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent #479573 transparent;
+        }
+
+    .tooltip_public:hover .tooltiptext_public {
+        visibility: visible;
+    }
+
+.tooltip_right_public {
+    position: relative;
+    display: inline-block;
+}
+
+    .tooltip_right_public .tooltiptext_right_public {
+        visibility: hidden;
+        background-color: #479573;
+        color: #fff;
+        text-align: center;
+        width: 80px;
+        margin-left: -40px;
+        top: 5px;
+        left: 101px;
+        padding-top: 6px;
+        padding-bottom: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 99;
+        font-size: 16px;
+    }
+
+        .tooltip_right_public .tooltiptext_right_public::after {
+            content: "";
+            position: absolute;
+            top: 35%;
+            right: 100%;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent #479573 transparent transparent;
+        }
+
+    .tooltip_right_public:hover .tooltiptext_right_public {
+        visibility: visible;
+    }
+
+.tooltip_public .tooltipname_public {
+    line-height: 40px;
+}
+
+.tooltip1_public, .tooltip2_public {
+    position: relative;
+}
+
+    .tooltip1_public .tooltiptext_public {
+        visibility: hidden;
+        width: 120px;
+        line-height: 25px;
+        height: 25px;
+        background-color: #ffffff;
+        color: #479573;
+        text-align: center;
+        border-radius: 6px;
+        margin-left: -160px;
+        /* 定位 */
+        position: absolute;
+        z-index: 1;
+    }
+
+    .tooltip2_public .tooltiptext_public {
+        visibility: hidden;
+        width: 120px;
+        line-height: 25px;
+        height: 25px;
+        background-color: #ffffff;
+        color: #479573;
+        text-align: center;
+        border-radius: 6px;
+        margin-left: 40px;
+        /* 定位 */
+        position: absolute;
+        z-index: 1;
+    }
+
+    .tooltip1_public:hover .tooltiptext_public, .tooltip2_public:hover .tooltiptext_public {
+        visibility: visible;
+    }
+
+#pcsubmenu_1, #pcsubmenu_2, #pcsubmenu_3, #pcsubmenu_4, #pcsubmenu_5, #pcsubmenu_6 {
+    z-index: 90;
+}
+
+.btn {
+    width: 90px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+    .btn a:link, .btn a:visited, .btn a:hover, .btn a:active {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+#footer_public hr {
+    color: #479573;
+}
+
+#gotop_public {
+    position: absolute;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #479573;
+    font-size: 14px;
+    line-height: 25px;
+    display: inline-block;
+}
+
+#gobot_public {
+    position: absolute;
+    left: 48px;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #479573;
+    font-size: 14px;
+    line-height: 25px;
+    display: inline-block;
+}
+
+#gobg_public {
+    position: absolute;
+    left: 64px;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #479573;
+    font-size: 20px;
+    line-height: 22px;
+    text-indent: 1px;
+    display: inline-block;
+}
+
+table a:link, table a:visited, table a:hover, table a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*1024以上的顯示狀態設定------------------------------------------------------*/
+@media screen and (min-width : 1025px ) {
+    #wapper_public {
+        margin: 0;
+    }
+    /*top區段--------------*/
+    #top_public {
+        padding-top: 10px;
+    }
+
+    #menu_public {
+        margin-top: 10px;
+        padding-top: 8px;
+        height: 35px;
+        text-align: center;
+        background-color: #479573;
+    }
+
+    #contentdata {
+    }
+    /*footer區段--------------*/
+    #footer_public {
+        position: fixed;
+        z-index: 90;
+        width: 100%;
+        bottom: 0px;
+        background-color: #479573;
+        text-align: center;
+    }
+
+    /*隱藏區段--------------*/
+    #mbmenu_public, #openmbmenu, #logomb {
+        display: none;
+    }
+
+    #tophr_public {
+        margin-top: 3px;
+        margin-bottom: 0px;
+        border: 0px solid #479573;
+    }
+}
+
+/*次選單區段-------------*/
+#pcsubmenu_1 {
+    position: absolute;
+    margin-top: 13px;
+    padding: 10px;
+    --widthA: 100%;
+    --widthB: calc(var(--widthA) / 2);
+    --widthC: calc(var(--widthB) - 260px);
+    margin-left: var(--widthC);
+    background-color: #479573;
+    text-align: left;
+    line-height: 40px;
+}
+
+#pcsubmenu_2 {
+    position: absolute;
+    margin-top: 13px;
+    padding: 10px;
+    --widthA: 100%;
+    --widthB: calc(var(--widthA) / 2);
+    --widthC: calc(var(--widthB) - 156px);
+    margin-left: var(--widthC);
+    background-color: #479573;
+    text-align: left;
+    line-height: 40px;
+}
+
+#pcsubmenu_3 {
+    position: absolute;
+    margin-top: 13px;
+    padding: 10px;
+    --widthA: 100%;
+    --widthB: calc(var(--widthA) / 2);
+    --widthC: calc(var(--widthB) - 48px);
+    margin-left: var(--widthC);
+    background-color: #479573;
+    text-align: left;
+    line-height: 40px;
+}
+
+#pcsubmenu_4 {
+    position: absolute;
+    margin-top: 13px;
+    padding: 10px;
+    --widthA: 100%;
+    --widthB: calc(var(--widthA) / 2);
+    --widthC: calc(var(--widthB) + 56px);
+    margin-left: var(--widthC);
+    background-color: #479573;
+    text-align: left;
+    line-height: 40px;
+}
+
+#footer_public {
+    color: white;
+    padding-bottom: 5px;
+}
+
+#footer_public hr {
+    color: "#479573";
+}
+
+/*1024含以下的顯示狀態設定------------------------------------------------------*/
+@media screen and (max-width:1024px) and (min-width:641px) {
+    #wapper_public {
+        margin: 0;
+    }
+    /*top區段--------------*/
+    #top_public {
+        padding-top: 10px;
+    }
+
+    #tophr_public {
+        margin-top: 10px;
+        margin-bottom: 0;
+        height: 0px;
+        background-color: #479573;
+        color: #479573;
+    }
+
+    #menu_public {
+        display: none;
+    }
+
+    #mbmenu_public {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 60vw;
+        background-color: #479573;
+        box-shadow: -6px -6px 10px -6px #444444;
+        font-size: 18px;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 50px;
+        top: -1200px;
+        opacity: 0;
+    }
+
+    #mbmenuclose_icon {
+        width: 50px;
+    }
+
+    #openmbmenu {
+        position: absolute;
+        top: 8px;
+        right: 20px;
+    }
+
+        #openmbmenu img {
+            height: 50px;
+        }
+
+    #closembmenu img {
+        padding-right: 18px;
+        margin-top: 3px;
+        width: 45px;
+    }
+
+    #mbmenu_public hr {
+        width: 80%;
+        color: #ffffff;
+        size: 1;
+    }
+
+    #closembmenu {
+        position: absolute;
+        top: 10px;
+        right: 0px;
+    }
+
+    #mbmenu_public #search_icon {
+        position: absolute;
+        right: 56px;
+        top: 90px;
+    }
+
+    #mbmenu_public input {
+        position: relative;
+        height: 40px;
+        font-size: 21px;
+        border-radius: 21px;
+        border: 2px solid #999999;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    #contentdata_public {
+        margin-top: 140px;
+    }
+
+    
+    /*footer區段--------------*/
+    #footer_public {
+        position: fixed;
+        z-index: 90;
+        width: 100%;
+        height: 60px;
+        bottom: 0px;
+        background-color: #479573;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #ffffff;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+}
+
+/*640含以下的顯示狀態設定------------------------------------------------------*/
+@media screen and (max-width:640px) {
+    #wapper_public {
+        margin: 0;
+    }
+    /*top區段--------------*/
+    #compno {
+        color: "#666666";
+    }
+
+    #top_public {
+        padding-top: 10px;
+    }
+
+    #tophr_public {
+        margin-top: 10px;
+        margin-bottom: 0;
+        height: 0px;
+        background-color: #479573;
+        color: #479573;
+    }
+
+    #menu_public {
+        display: none;
+    }
+
+    #mbmenu_public {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 60vw;
+        background-color: #479573;
+        box-shadow: -6px -6px 10px -6px #444444;
+        font-size: 18px;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 50px;
+        line-height: 32px;
+        top: -1200px;
+        opacity: 0;
+    }
+
+    #mbmenuclose_icon {
+        width: 50px;
+    }
+
+    #openmbmenu {
+        position: absolute;
+        top: 8px;
+        right: 20px;
+    }
+
+        #openmbmenu img {
+            height: 40px;
+        }
+
+    #closembmenu img {
+        padding-right: 18px;
+        margin-top: 3px;
+        width: 36px;
+    }
+
+    #mbmenu_public hr {
+        width: 80%;
+        color: #ffffff;
+        size: 1;
+    }
+
+    #closembmenu {
+        position: absolute;
+        top: 10px;
+        right: 0px;
+    }
+
+    #mbmenu_public #search_icon {
+        position: absolute;
+        right: 56px;
+        top: 90px;
+    }
+
+    #mbmenu_public input {
+        position: relative;
+        height: 40px;
+        font-size: 21px;
+        border-radius: 21px;
+        border: 2px solid #999999;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    #contentdata_public {
+        margin-top: 80px;
+    }
+    /*footer區段--------------*/
+    #footer_public {
+        position: fixed;
+        z-index: 90;
+        width: 100%;
+        height: 60px;
+        bottom: 0px;
+        background-color: #479573;
+        font-size: 12px;
+        line-height: 21px;
+        text-align: center;
+        color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+}

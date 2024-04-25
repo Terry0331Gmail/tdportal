@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/*通用區段--------------------------------------------------------*/
+/*主要色調#dd5511*/
+
+body {
+    margin: 0px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.error-label {
+    color: red;
+    padding-left: 10px;
+}
+
+.disabled-link {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.no-tooltip {
+    display: inline-block;
+}
+
+.search-icon {
+    height: 25px;
+}
+
+.table2 td {
+    padding: 5px;
+}
+
+.table-multirow td {
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+
+.circle-green {
+    background-color: green;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.circle-yellow {
+    background-color: yellow;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.circle-red {
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}

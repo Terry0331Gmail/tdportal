@@ -1,0 +1,1037 @@
+@charset "UTF-8";
+
+#popup_ {
+    position: absolute;
+    z-index: 99;
+    width: 400px;
+    height: 400px;
+    background-color: #dd5511;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+input[type="text"], input[type="select"], input[type="password"] {
+    font-size: 12pt;
+}
+
+/* input[type="file"] {
+    position: fixed;
+    right: 100%;
+    bottom: 100%;
+} */
+
+#compno {
+    color: #666666;
+    padding-left: 1em;
+}
+
+hr {
+    size: 1;
+    color: #999999;
+}
+
+.menutext {
+    font-size: 16px;
+    vertical-align: middle;
+    color: #E8E3BF;
+}
+
+.menutext_line {
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+
+.menutext a:link, .menutext a:visited {
+    color: #E8E3BF;
+    text-decoration: none;
+}
+
+.menutext a:hover, .menutext a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#menu ul {
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 5px;
+    color: white;
+    line-height: 30px;
+}
+
+    #menu ul li {
+        line-height: 30px;
+        margin-left: -12px;
+        text-align: left;
+    }
+
+.menubox {
+    background-color: #dd5511;
+    width: 150px;
+    float: left;
+    z-index: 99;
+}
+
+.menubox2 {
+    background-color: #dd5511;
+    width: 140px;
+    float: left;
+    margin-left: -26px;
+}
+
+.menubox3 {
+    background-color: #dd5511;
+    float: left;
+    width: 120px;
+}
+
+.menubox a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menubox a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menubox a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.submenu {
+    color: #ffffff;
+    text-indent: 2em;
+}
+
+
+#mbmenu ul {
+    margin-left: -30px;
+    list-style: none;
+    line-height: 40px;
+}
+
+input[type="text"], input[type="select"], input[type="password"] {
+    font-size: 12pt;
+}
+
+#compno {
+    color: #666666;
+    padding-left: 1em;
+}
+
+hr {
+    size: 1;
+    color: #999999;
+}
+
+#content2 {
+    width: 100%;
+    height: 82vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#inner_content2 {
+    text-align:center;
+}
+
+#inner_content2_title {
+    padding-right: 10%;
+}
+
+#inner_content_bullet {
+    width: 200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+/*content首頁區段--------------*/
+#content {
+    width: 100%;
+    height: 82vh;
+    background-image: url("../images/2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -10px;
+}
+/*content內頁區段--------------*/
+#content_list {
+    margin: auto;
+    padding-top: 20px;
+}
+
+#content_title {
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+}
+
+#content_listL {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 14px;
+    text-align: left;
+    padding-top: 20px;
+}
+
+#content_titleL {
+    font-size: 18px;
+    margin: auto;
+    text-align: left;
+}
+
+#contenttitle_text {
+    text-align: center;
+}
+
+.datatable {
+    margin-bottom: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#content_search_1, #content_search_2, #content_add, #content_paper {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: auto;
+    text-align: left;
+    background-color: #F1EDD1;
+}
+
+#contenttitle_text input, #content_list select {
+    border-radius: 10px;
+    border: 2px solid #999999;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.inline {
+    margin: 0px auto;
+    text-align: center;
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+
+    .inline div {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+        .inline div img {
+            width: 30px;
+            vertical-align: middle;
+        }
+
+select, input {
+    font-size: 16px;
+}
+
+/*popup區段--------------*/
+#popup_backstage {
+}
+
+#popup_upload_file {
+    position: absolute;
+    top: 200px;
+    left: calc(50% - 125px);
+    height: auto;
+    border: 0px;
+    border-radius: 15px;
+    background-color: #dd5511;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 16px;
+    box-shadow: 3px 3px 5px 0px #444444;
+    text-align: center;
+    z-index: 99;
+}
+
+
+.custom-file-upload {
+    width: 90px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 10px;
+    display: inline-block;
+    padding-top: 2px;
+    margin: 3px;
+}
+/*
+#popup_backstage, #popup_login, #popup_add, #popup_update, #popup_view {
+    position: absolute;
+    top: 200px;
+    left: calc(50% - 125px);
+    height: auto;
+    border: 0px;
+    border-radius: 15px;
+    background-color: #dd5511;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 16px;
+    box-shadow: 3px 3px 5px 0px #444444;
+    text-align: center;
+    z-index: 99;
+}
+
+    #popup_backstage input, #popup_login input {
+        position: relative;
+        border-radius: 20px;
+        border: 2px solid #999999;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #popup_backstage hr {
+        margin-top: 20px;
+    }
+*/
+
+.white_linktext a:link, .white_linktext a:visited, .white_linktext a:hover, .white_linktext a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*圖像說明*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        background-color: #dd5511;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        width: 80px;
+        margin-left: -40px;
+        top: 100%;
+        left: 0%;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 99;
+    }
+
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent #dd5511 transparent;
+        }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+
+.tooltip_right {
+    position: relative;
+    display: inline-block;
+}
+
+    .tooltip_right .tooltiptext_right {
+        visibility: hidden;
+        background-color: #dd5511;
+        color: #fff;
+        text-align: center;
+        width: 100px;
+        margin-left: -58px;
+        top: 5px;
+        left: 101px;
+        padding-top: 6px;
+        padding-bottom: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 99;
+        font-size: 16px;
+    }
+
+        .tooltip_right .tooltiptext_right::after {
+            content: "";
+            position: absolute;
+            top: 35%;
+            right: 100%;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent #dd5511 transparent transparent;
+        }
+
+    .tooltip_right:hover .tooltiptext_right {
+        visibility: visible;
+    }
+
+.tooltip .tooltipname {
+    line-height: 40px;
+}
+
+.tooltip1, .tooltip2 {
+    position: relative;
+}
+
+    .tooltip1 .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        line-height: 25px;
+        height: 25px;
+        background-color: #ffffff;
+        color: #dd5511;
+        text-align: center;
+        border-radius: 6px;
+        margin-left: -160px;
+        /* 定位 */
+        position: absolute;
+        z-index: 1;
+    }
+
+    .tooltip2 .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        line-height: 25px;
+        height: 25px;
+        background-color: #ffffff;
+        color: #dd5511;
+        text-align: center;
+        border-radius: 6px;
+        margin-left: 40px;
+        /* 定位 */
+        position: absolute;
+        z-index: 1;
+    }
+
+    .tooltip1:hover .tooltiptext, .tooltip2:hover .tooltiptext {
+        visibility: visible;
+    }
+
+
+#moreedit1, #moreedit2, #moreedit3, #moreedit4, #moreedit5, #moreedit6, #moreedit7, #moreedit8, #moreedit9, #moreedit10 {
+    position: absolute;
+    width: 50px;
+    background-color: #AAAAAA;
+    z-index: 99;
+    left: 50px;
+    top: -7px;
+    padding-top: 6px;
+    border-radius: 10px;
+    display: none;
+}
+
+.moreedit {
+    position: absolute;
+    width: 50px;
+    background-color: #AAAAAA;
+    z-index: 99;
+    left: 50px;
+    top: -10px;
+    padding-top: 6px;
+    border-radius: 10px;
+    display: none;
+}
+
+#webpath {
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.btn9 {
+    width: 90px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 10px;
+    display: inline-block;
+    padding-top: 2px;
+    margin: 3px;
+}
+
+    .btn9 a:link, .btn9 a:visited, .btn9 a:hover, .btn9 a:active {
+        color: #ffffff;
+        text-decoration: none;
+    }
+/* gotop */
+#goto {
+    position: relative;
+    margin: auto;
+    width: 72px;
+    height: 32px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 99;
+    padding-top: 5px;
+}
+
+#gotop {
+    position: absolute;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #dd5511;
+    font-size: 14px;
+    line-height: 25px;
+    display: inline-block;
+}
+
+#gobot {
+    position: absolute;
+    left: 48px;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #dd5511;
+    font-size: 14px;
+    line-height: 25px;
+    display: inline-block;
+}
+
+#gobg {
+    position: absolute;
+    left: 64px;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #dd5511;
+    font-size: 20px;
+    line-height: 22px;
+    text-indent: 1px;
+    display: inline-block;
+}
+
+table a:link, table a:visited, table a:hover, table a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+/*1024以上的顯示狀態設定------------------------------------------------------*/
+@media screen and (min-width : 1025px ) {
+    #RBIInfo {
+        width: 100%;
+        height: 300px;
+        background-image: url("../images/pcbanner.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: -9px;
+    }
+
+    #RBIInfo2 {
+        width: 100%;
+        height: 300px;
+        background-image: url("../images/pcbanner3.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: -9px;
+    }
+
+    #wapper {
+        position: absolute;
+        width: 100%;
+        top: 165px;
+    }
+    /*top區段--------------*/
+    #top {
+        position: absolute;
+        padding-top: 10px;
+        width: 100%;
+        z-index: 99;
+    }
+
+    #logo {
+        display: inline;
+    }
+
+        #logo img {
+            height: 100px;
+            margin-left: 10px;
+        }
+
+    #search {
+        position: absolute;
+        height: 24px;
+        top: 28px;
+        left: 200px;
+    }
+
+    #search_icon {
+        position: absolute;
+        left: 382px;
+        top: 0px;
+    }
+
+    #search input {
+        position: relative;
+        height: 32px;
+        font-size: 16px;
+        border-radius: 21px;
+        border: 2px solid #999999;
+        padding: 10px;
+    }
+
+    #slidetext {
+        width: 80%;
+        height: 32px;
+        padding: 5px;
+    }
+
+    #info {
+        display: inline-block;
+        padding-top: 6px;
+        float: right;
+        text-align: right;
+        padding-right: 40px;
+    }
+
+    #menu {
+        margin-top: 10px;
+        padding-top: 5px;
+        height: 40px;
+        text-align: center;
+        background-color: #dd5511;
+    }
+
+    #contentdata {
+    }
+    /*footer區段--------------*/
+    #footer {
+        position: fixed;
+        z-index: 90;
+        width: 100%;
+        bottom: 0px;
+        background-color: #dd5511;
+        text-align: center;
+        color: white;
+        padding-bottom: 5px;
+    }
+
+    #login_backstage {
+        width: 50px;
+        padding-left: 10px;
+    }
+    /*隱藏區段--------------*/
+    #mbmenu, #openmbmenu, #logomb {
+        display: none;
+    }
+}
+
+#login_backstage {
+    -webkit-filter: invert(1);
+}
+
+#tophr {
+    background-color: #dd5511;
+    border: 1px solid #dd5511;
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+
+#bottomhr {
+    background-color: #dd5511;
+    border: 0px solid #dd5511;
+}
+/*1024含以下的顯示狀態設定------------------------------------------------------*/
+@media screen and (max-width:1024px) and (min-width:641px) {
+    #RBIInfo {
+        width: 100%;
+        height: 300px;
+        background-image: url("../images/pcbanner.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: -9px;
+    }
+
+    #RBIInfo2 {
+        width: 100%;
+        height: 300px;
+        background-image: url("../images/pcbanner3.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: -9px;
+    }
+
+    #wapper {
+        position: absolute;
+        width: 100%;
+        top: 165px;
+    }
+    /*top區段--------------*/
+    #top {
+        position: absolute;
+        padding-top: 10px;
+        width: 100%;
+        z-index: 99;
+    }
+
+    #logomb {
+        width: 20%;
+        height: 50px;
+        display: inline-block;
+    }
+
+        #logomb img {
+            height: 60px;
+            margin-left: 10px;
+        }
+
+    #logo hr {
+        width: 100%;
+        color: #ffffff;
+    }
+
+    #tophr {
+        margin-top: 40px;
+        background-color: #dd5511;
+        border: 1px solid #dd5511;
+        margin-bottom: 0;
+    }
+
+    #bottomhr {
+        background-color: #dd5511;
+        border: 0px solid #dd5511;
+    }
+
+    #menu, #info, #logo {
+        display: none;
+    }
+
+    #search {
+        position: absolute;
+        top: 100px;
+        left: calc( 50% - 220px);
+        width: 380px;
+    }
+
+    #search_icon {
+        position: absolute;
+        left: 380px;
+        top: 0px;
+    }
+
+    #search input {
+        position: relative;
+        height: 32px;
+        width: 380px;
+        font-size: 16px;
+        border-radius: 21px;
+        border: 2px solid #999999;
+        padding: 10px;
+    }
+
+    #slidetext {
+        width: 80%;
+        height: 32px;
+        padding: 5px;
+    }
+
+    #mbmenu {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 60vw;
+        background-color: #dd5511;
+        box-shadow: -6px -6px 10px -6px #444444;
+        font-size: 18px;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 50px;
+        top: -3000px;
+        opacity: 0;
+        padding-right: 60px;
+        z-index: 99;
+    }
+
+    #mbmenuclose_icon {
+        width: 50px;
+    }
+
+    #openmbmenu {
+        position: absolute;
+        top: 8px;
+        right: 20px;
+    }
+
+        #openmbmenu img {
+            height: 50px;
+        }
+
+    #closembmenu img {
+        padding-right: 18px;
+        margin-top: 3px;
+        width: 45px;
+    }
+
+    #mbmenu hr {
+        width: 80%;
+        color: #ffffff;
+        size: 1;
+    }
+
+    #closembmenu {
+        position: absolute;
+        top: 10px;
+        right: 0px;
+    }
+
+    #mbmenu #search_icon {
+        position: absolute;
+        right: 56px;
+        top: 90px;
+    }
+
+    #mbmenu input {
+        position: relative;
+        height: 40px;
+        font-size: 21px;
+        border-radius: 21px;
+        border: 2px solid #999999;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    #contentdata {
+        margin-top: 10px;
+    }
+
+    .datatable {
+    }
+    /*footer區段--------------*/
+    #footer {
+        position: fixed;
+        z-index: 90;
+        width: 100%;
+        height: 60px;
+        bottom: 0px;
+        background-color: #dd5511;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #ffffff;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+
+    #login_backstage {
+        width: 40px;
+        padding-left: 10px;
+        padding-bottom: 15px;
+        -webkit-filter: invert(1);
+    }
+
+    #infohide {
+        visibility: hidden;
+    }
+    /*popup區段--------------*/
+}
+
+/*640含以下的顯示狀態設定------------------------------------------------------*/
+@media screen and (max-width:640px) {
+    #RBIInfo {
+        width: 100%;
+        height: 300px;
+        background-image: url("../images/mbbanner.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: -9px;
+    }
+
+    #RBIInfo2 {
+        width: 100%;
+        height: 300px;
+        background-image: url("../images/mbbanner.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: -9px;
+    }
+
+    #wapper {
+        position: absolute;
+        width: 100%;
+        top: 165px;
+    }
+    /*top區段--------------*/
+    #top {
+        padding-top: 10px;
+    }
+
+    #logomb {
+        width: 20%;
+        height: 50px;
+        display: inline-block;
+    }
+
+        #logomb img {
+            height: 60px;
+        }
+
+    #logo hr {
+        width: 100%;
+        color: #ffffff;
+        size: 1;
+    }
+
+    #tophr {
+        margin-top: 20px;
+        background-color: #dd5511;
+        border: 1px solid #dd5511;
+        margin-bottom: 0;
+    }
+
+    #bottomhr {
+        background-color: #dd5511;
+        border: 0px solid #dd5511;
+    }
+
+    #menu, #info, #logo {
+        display: none;
+    }
+
+    #search {
+        position: absolute;
+        top: 100px;
+        left: calc( 50% - 120px);
+        width: 220px;
+    }
+
+    #search_icon {
+        position: absolute;
+        left: 220px;
+        top: 0px;
+    }
+
+    #search input {
+        position: relative;
+        height: 32px;
+        width: 220px;
+        font-size: 16px;
+        border-radius: 21px;
+        border: 2px solid #999999;
+        padding: 10px;
+    }
+
+    #slidetext {
+        width: 90%;
+        height: 32px;
+        padding: 5px;
+    }
+
+    #mbmenu {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 60vw;
+        background-color: #dd5511;
+        box-shadow: -6px -6px 10px -6px #444444;
+        font-size: 18px;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 50px;
+        line-height: 32px;
+        top: -1200px;
+        opacity: 0;
+        z-index: 99;
+    }
+
+    #mbmenuclose_icon {
+        width: 50px;
+    }
+
+    #openmbmenu {
+        text-align: right;
+        position: absolute;
+        top: 8px;
+        right: 20px;
+    }
+
+        #openmbmenu img {
+            height: 40px;
+        }
+
+    #closembmenu img {
+        padding-right: 18px;
+        margin-top: 3px;
+        width: 36px;
+    }
+
+    #mbmenu hr {
+        width: 80%;
+        color: #ffffff;
+        size: 1;
+    }
+
+    #closembmenu {
+        position: absolute;
+        top: 10px;
+        right: 0px;
+    }
+
+    #mbmenu #search_icon {
+        position: absolute;
+        right: 56px;
+        top: 90px;
+    }
+
+    #mbmenu input {
+        position: relative;
+        height: 40px;
+        font-size: 21px;
+        border-radius: 21px;
+        border: 2px solid #999999;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    #contentdata {
+        margin-top: 10px;
+    }
+    /*footer區段--------------*/
+    #footer {
+        position: fixed;
+        z-index: 90;
+        width: 100%;
+        height: 60px;
+        bottom: 0px;
+        background-color: #dd5511;
+        font-size: 10px;
+        line-height: 21px;
+        text-align: center;
+        color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    #login_backstage {
+        width: 30px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+        -webkit-filter: invert(1);
+    }
+
+    #infohide {
+        visibility: hidden;
+    }
+}
