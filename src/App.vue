@@ -575,11 +575,12 @@
                 <div class="row">
                     <div class="col-md-12">
                         <!-- Portfolio Controller/Buttons -->
-                        <div class="controls text-center">
-                            <a class="control active btn btn-common btn-effect" @click="scrollPage" data-filter="all">All</a>
-                            <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".school">學校</a>
-                            <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".partner">合作單位</a>
-                        </div>
+                      <div class="controls text-center">
+                        <a class="control active btn btn-common btn-effect" @click="scrollPage" data-filter="all">All</a>
+                        <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".school">學校</a>
+                        <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".partner">醫院</a>
+                        <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".ngo">機構</a>
+                      </div>
                         <!-- Portfolio Controller/Buttons Ends-->
                     </div>
                 </div>
@@ -624,17 +625,17 @@
                             <img src='@/assets/img/home/partner5.png' style="width:100%">
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-xs-12 mix partner">
+                    <div class="col-lg-4 col-md-6 col-xs-12 mix ngo">
                         <div style="margin-bottom:0px">
                             <img src='@/assets/img/home/partner6.png' style="width:100%">
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-xs-12 mix partner">
+                    <div class="col-lg-4 col-md-6 col-xs-12 mix ngo">
                         <div style="margin-bottom:0px">
                             <img src='@/assets/img/home/partner7.png' style="width:100%">
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-xs-12 mix partner">
+                    <div class="col-lg-4 col-md-6 col-xs-12 mix ngo">
                         <div style="margin-bottom:0px">
                             <img src='@/assets/img/home/partner8.png' style="width:100%">
                         </div>
