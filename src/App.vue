@@ -41,7 +41,7 @@
                             <area shape="rect" coords="185,92,479,228" href="https://www.xraihealth.com" alt="Area 1">
                             <!-- 下半部分三等分 -->
                             <area shape="rect" coords="588,92,885,230" href="https://www.xraihealth.com" alt="Area 2">
-                            <area shape="rect" coords="185,265,481,439" href="https://tdportals.azurewebsites.net/public/news" alt="Area 3">
+                            <area shape="rect" coords="185,265,481,439" href="https://tdportals.azurewebsites.net/public/home" alt="Area 3">
                             <area shape="rect" coords="588,269,885,439" href="https://nthuportal.azurewebsites.net/" alt="Area 4">
                         </map>
                     </div>
