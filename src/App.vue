@@ -691,14 +691,7 @@
     }
 
 
-    .mix {
-        height: auto;
-        margin: 5px;
-        background-color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    
 </style>
 <style>
 
