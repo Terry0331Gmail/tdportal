@@ -2,7 +2,7 @@
   <div>
 
     <header id="slider-area">
-      
+
       <nav class="navbar navbar-expand-md fixed-top  scrolling-navbar bg-white menu-bg">
         <div class="container">
           <img src='@/assets/images/logo.png' style="width:100px">
@@ -61,7 +61,7 @@
         <div class="section-header">
           <div class="section-title">
             ▌&nbsp;&nbsp;<font style="color: rgb(144, 153, 147);">計劃簡介</font>&nbsp;&nbsp;▌
-                         <span>About</span>
+            <span>About</span>
           </div>
         </div>
         <div class="row">
@@ -152,17 +152,17 @@
         <div class="section-header">
           <div class="section-title">
             ▌&nbsp;&nbsp;<font style="color: rgb(144, 153, 147);">分項計畫</font>&nbsp;&nbsp;▌
-                         <span>Sub-Projects</span>
+            <span>Sub-Projects</span>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
             <!-- Portfolio Controller/Buttons -->
             <div class="controls text-center">
-              <a class="control btn btn-common btn-effect"  @click="scrollPage" data-filter=".pland1">計畫一</a>
-              <a class="control btn btn-common btn-effect"  @click="scrollPage" data-filter=".pland2">計畫二</a>
-              <a class="control btn btn-common btn-effect"  @click="scrollPage" data-filter=".pland3">計畫三</a>
-              <a class="control btn btn-common btn-effect"  @click="scrollPage" data-filter=".pland4">計畫四</a>
+              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".pland1">計畫一</a>
+              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".pland2">計畫二</a>
+              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".pland3">計畫三</a>
+              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".pland4">計畫四</a>
             </div>
             <!-- Portfolio Controller/Buttons Ends-->
           </div>
@@ -324,7 +324,7 @@
         <div class="section-header">
           <div class="section-title">
             ▌&nbsp;&nbsp;<font style="color: rgb(144, 153, 147);">計畫目標</font>&nbsp;&nbsp;▌
-                         <span>Goal</span>
+            <span>Goal</span>
           </div>
 
         </div>
@@ -406,7 +406,7 @@
         <div class="section-header">
           <div class="section-title">
             ▌&nbsp;&nbsp;<font style="color: rgb(144, 153, 147);">活動照片</font>&nbsp;&nbsp;▌
-                         <span>Photos</span>
+            <span>Photos</span>
 
           </div>
         </div>
@@ -570,7 +570,7 @@
         <div class="section-header">
           <div class="section-title">
             ▌&nbsp;&nbsp;<font style="color: rgb(144, 153, 147);">研究團隊</font>&nbsp;&nbsp;▌
-                         <span>Partner</span>
+            <span>Partner</span>
 
           </div>
         </div>
@@ -644,8 +644,8 @@
           </div>
 
         </div>
-        
-        
+
+
         <div class="row" style="border:1px;margin-top:100px">
           <div class="col-lg-12 col-md-12 col-xs-12">
             <div class="wow fadeInDown" style="margin-bottom:0px" data-wow-delay="0.2s">
@@ -667,6 +667,9 @@
 </template>
 <style scoped src="@/assets/css/bootstrap2.css">
 </style>
+<style scoped src="@/assets/css/bootstrap.min.css">
+</style>
+
 <style scoped src="@/assets/css/line-icons.css">
 </style>
 <style scoped src="@/assets/css/animate.css">
@@ -681,24 +684,22 @@
 </style>
 
 <style scoped>
-  
-    .container_fox {
-        width: 100%;
-        padding-right: 10px;
-        padding-left: 10px;
-        margin-right: auto;
-        margin-left: auto;
-    }
 
-
-    
+  .container_fox {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 </style>
 <style>
 
   .header {
     background-color: #479573;
-    height:50px;
+    height: 50px;
   }
+
   .footer {
     background-color: #479573;
   }
@@ -721,9 +722,6 @@
       background-color: #ccc; /* 添加懸停時的背景顏色 */
       color: #333; /* 添加懸停時的文字顏色 */
     }
-
-  
-
 </style>
 <script>
   import { WOW } from 'wowjs'
@@ -731,135 +729,135 @@
   import 'bootstrap'
   import $ from 'jquery';
 
-  import 'bootstrap/dist/css/bootstrap.min.css'
-    export default {
-        data() {
-            return {
-                
-                originalCoords: null // 原始坐標值
-            };
 
-        },
-        async mounted() {
-            //document.body.style.fontFamily = "'標楷體', 'Microsoft JhengHei', sans-serif";
-            // 初始化 Bootstrap 的 JavaScript 功能
-            $('.navbar-toggler').on('click', function () {
-              $('.collapse').toggleClass('show');
-            });
-            this.$nextTick(() => {
-                new WOW().init();
-                this.getOriginalCoords(); // 獲取原始坐標值
-                this.adjustCoords();
-                window.addEventListener('resize', this.adjustCoords);
-                var containerEl1 = document.querySelector('[data-ref="container-3"]');
-                var containerEl2 = document.querySelector('[data-ref="container-2"]');
-                var containerEl3 = document.querySelector('[data-ref="container-1"]');
-                mixitup(containerEl1, {
-                    controls: {
-                        scope: 'local'
-                    },
-                    selectors: {
-                        target: '.mix'
-                    },
-                    load: {
-                        filter: '.plan1' // 設置預設的篩選器為 ".plan1"
-                    }
-                });
-                 mixitup(containerEl2, {
-                    controls: {
-                        scope: 'local'
-                    },
-                    selectors: {
-                        target: '.mix'
-                    },
-                    load: {
-                        filter: '.pland1' // 設置預設的篩選器為 ".plan1"
-                    }
-                });
-                mixitup(containerEl3, {
-                    controls: {
-                        scope: 'local'
-                    },
-                    selectors: {
-                        target: '.mix'
-                    }
-                });
-            })
-            
-            
-            //var containerEl = document.querySelector('.container_fox');
-            //var mixer = mixitup(containerEl);
-            this.adjustCoords();
-            
-        },
-        beforeDestroy() {
-            window.removeEventListener('resize', this.adjustCoords);
-        },
-        async created() {
-            
-        },
-        beforeRouteLeave(to, from, next) {
-            // 在離開組件前清理 MixItUp 實例
-            var containerEl = document.querySelector('[data-ref="container-1"]');
-            
-            if (containerEl.mixitup) {
-                containerEl.mixitup('destroy');
-            }
-            var containerE2 = document.querySelector('[data-ref="container-2"]');
-            if (containerE2.mixitup) {
-                containerE2.mixitup('destroy');
-            }
-            var containerE3 = document.querySelector('[data-ref="container-3"]');
-            if (containerE3.mixitup) {
-                containerE3.mixitup('destroy');
-            }
-            next();
-        },
-        methods: {
-            getOriginalCoords() {
-                const areas = document.getElementsByTagName('area');
-                this.originalCoords = [];
-                for (let i = 0; i < areas.length; i++) {
-                    this.originalCoords.push(areas[i].getAttribute('coords').split(','));
-                }
-            },
-            adjustCoords() {
-                const image = this.$refs.responsiveImage;
-                if (image && this.originalCoords) {
-                    const originalWidth = 1082; // 原始圖片的寬度
-                    const originalHeight = 532; // 原始圖片的高度
-                    const currentWidth = image.clientWidth; // 當前圖片的寬度
-                    const currentHeight = image.clientHeight; // 當前圖片的高度
+  export default {
+    data() {
+      return {
 
-                    const ratioX = currentWidth / originalWidth;
-                    const ratioY = currentHeight / originalHeight;
+        originalCoords: null // 原始坐標值
+      };
 
-                    const areas = document.getElementsByTagName('area');
-                    for (let i = 0; i < areas.length; i++) {
-                        const coords = this.originalCoords[i].slice(); // 複製原始坐標值
-                        for (let j = 0; j < coords.length; j++) {
-                            coords[j] = Math.round(coords[j] * (j % 2 === 0 ? ratioX : ratioY));
-                        }
-                        areas[i].setAttribute('coords', coords.join(','));
-                    }
-                }
-            },
-            scrollPage() {
-                // 向下捲動頁面
-                window.scrollBy({
-                    top: 1, // 向下滾動10像素
-                    behavior: "auto" // 平滑捲動效果
-                });
+    },
+    async mounted() {
+      //document.body.style.fontFamily = "'標楷體', 'Microsoft JhengHei', sans-serif";
+      // 初始化 Bootstrap 的 JavaScript 功能
+      $('.navbar-toggler').on('click', function () {
+        $('.collapse').toggleClass('show');
+      });
+      this.$nextTick(() => {
+        new WOW().init();
+        this.getOriginalCoords(); // 獲取原始坐標值
+        this.adjustCoords();
+        window.addEventListener('resize', this.adjustCoords);
+        var containerEl1 = document.querySelector('[data-ref="container-3"]');
+        var containerEl2 = document.querySelector('[data-ref="container-2"]');
+        var containerEl3 = document.querySelector('[data-ref="container-1"]');
+        mixitup(containerEl1, {
+          controls: {
+            scope: 'local'
+          },
+          selectors: {
+            target: '.mix'
+          },
+          load: {
+            filter: '.plan1' // 設置預設的篩選器為 ".plan1"
+          }
+        });
+        mixitup(containerEl2, {
+          controls: {
+            scope: 'local'
+          },
+          selectors: {
+            target: '.mix'
+          },
+          load: {
+            filter: '.pland1' // 設置預設的篩選器為 ".plan1"
+          }
+        });
+        mixitup(containerEl3, {
+          controls: {
+            scope: 'local'
+          },
+          selectors: {
+            target: '.mix'
+          }
+        });
+      })
 
-                // 延遲一段時間後再向上捲動頁面
-                setTimeout(() => {
-                    window.scrollBy({
-                        top: -1, // 向上滾動10像素
-                        behavior: "auto" // 平滑捲動效果
-                    });
-                }, 1000); // 在捲動完成後等待500毫秒再向上滾動，這個時間可以根據需要調整
-            }
-            
+
+      //var containerEl = document.querySelector('.container_fox');
+      //var mixer = mixitup(containerEl);
+      this.adjustCoords();
+
+    },
+    beforeDestroy() {
+      window.removeEventListener('resize', this.adjustCoords);
+    },
+    async created() {
+
+    },
+    beforeRouteLeave(to, from, next) {
+      // 在離開組件前清理 MixItUp 實例
+      var containerEl = document.querySelector('[data-ref="container-1"]');
+
+      if (containerEl.mixitup) {
+        containerEl.mixitup('destroy');
+      }
+      var containerE2 = document.querySelector('[data-ref="container-2"]');
+      if (containerE2.mixitup) {
+        containerE2.mixitup('destroy');
+      }
+      var containerE3 = document.querySelector('[data-ref="container-3"]');
+      if (containerE3.mixitup) {
+        containerE3.mixitup('destroy');
+      }
+      next();
+    },
+    methods: {
+      getOriginalCoords() {
+        const areas = document.getElementsByTagName('area');
+        this.originalCoords = [];
+        for (let i = 0; i < areas.length; i++) {
+          this.originalCoords.push(areas[i].getAttribute('coords').split(','));
         }
+      },
+      adjustCoords() {
+        const image = this.$refs.responsiveImage;
+        if (image && this.originalCoords) {
+          const originalWidth = 1082; // 原始圖片的寬度
+          const originalHeight = 532; // 原始圖片的高度
+          const currentWidth = image.clientWidth; // 當前圖片的寬度
+          const currentHeight = image.clientHeight; // 當前圖片的高度
+
+          const ratioX = currentWidth / originalWidth;
+          const ratioY = currentHeight / originalHeight;
+
+          const areas = document.getElementsByTagName('area');
+          for (let i = 0; i < areas.length; i++) {
+            const coords = this.originalCoords[i].slice(); // 複製原始坐標值
+            for (let j = 0; j < coords.length; j++) {
+              coords[j] = Math.round(coords[j] * (j % 2 === 0 ? ratioX : ratioY));
+            }
+            areas[i].setAttribute('coords', coords.join(','));
+          }
+        }
+      },
+      scrollPage() {
+        // 向下捲動頁面
+        window.scrollBy({
+          top: 1, // 向下滾動10像素
+          behavior: "auto" // 平滑捲動效果
+        });
+
+        // 延遲一段時間後再向上捲動頁面
+        setTimeout(() => {
+          window.scrollBy({
+            top: -1, // 向上滾動10像素
+            behavior: "auto" // 平滑捲動效果
+          });
+        }, 1000); // 在捲動完成後等待500毫秒再向上滾動，這個時間可以根據需要調整
+      }
+
     }
+  }
 </script>
