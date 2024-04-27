@@ -61,11 +61,11 @@ a:focus {
 }
 
 a:not([href]):not([tabindex]) {
-  color: #fff;
+  color: black;
 }
 
 a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
-  color: #fff;
+  color: black;
 }
 
 .bg-transparent {
@@ -133,7 +133,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 .btn {
   font-size: 14px;
   padding: 10px 30px;
-  border-radius: 30px;
+  border-radius: 10px;
   font-weight: 400;
   color: #fff;
   text-transform: uppercase;
@@ -144,46 +144,46 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   display: inline-block;
 }
 
-.btn:focus,
-.btn:active {
-  box-shadow: none;
-  outline: none;
-  color: #fff;
-}
+  .btn:focus,
+  .btn:active {
+    box-shadow: none;
+    outline: none;
+    color: #fff;
+  }
 
 .btn-common {
-  background-color: rgb(27, 182, 202 );
+  background-color: #fff;
   position: relative;
   z-index: 1;
   padding: 12px 32px;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
-.btn-common:hover {
-  color: #fff;
-}
+  .btn-common:hover {
+    color: #fff;
+  }
 
 .btn-effect {
   overflow: hidden;
 }
 
-.btn-effect:after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 100%;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  background: rgba(0, 0, 0, 0.1);
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
+  .btn-effect:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
 
-.btn-effect:hover:after {
-  width: 100%;
-}
+  .btn-effect:hover:after {
+    width: 100%;
+  }
 
 .btn-border {
   border-style: solid;
@@ -194,10 +194,10 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   color: #fff;
 }
 
-.btn-border:hover {
-  color: #ffffff;
-  background-color: #F97794;
-}
+  .btn-border:hover {
+    color: #ffffff;
+    background-color: #F97794;
+  }
 
 .btn-lg {
   padding: 14px 33px;
