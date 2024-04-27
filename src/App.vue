@@ -61,7 +61,7 @@
         <div class="section-header">
           <div class="section-title">
             ▌&nbsp;&nbsp;<font style="color: rgb(144, 153, 147);">計劃簡介</font>&nbsp;&nbsp;▌
-            <span>Introduction</span>
+                         <span>About</span>
           </div>
         </div>
         <div class="row">
@@ -152,7 +152,7 @@
         <div class="section-header">
           <div class="section-title">
             ▌&nbsp;&nbsp;<font style="color: rgb(144, 153, 147);">分項計畫</font>&nbsp;&nbsp;▌
-            <span>Project Details</span>
+                         <span>Sub-Projects</span>
           </div>
         </div>
         <div class="row">
@@ -324,7 +324,7 @@
         <div class="section-header">
           <div class="section-title">
             ▌&nbsp;&nbsp;<font style="color: rgb(144, 153, 147);">計畫目標</font>&nbsp;&nbsp;▌
-            <span>Project goals</span>
+                         <span>Goal</span>
           </div>
 
         </div>
@@ -406,7 +406,7 @@
         <div class="section-header">
           <div class="section-title">
             ▌&nbsp;&nbsp;<font style="color: rgb(144, 153, 147);">活動照片</font>&nbsp;&nbsp;▌
-            <span>Photo Gallery</span>
+                         <span>Photos</span>
 
           </div>
         </div>
@@ -570,7 +570,7 @@
         <div class="section-header">
           <div class="section-title">
             ▌&nbsp;&nbsp;<font style="color: rgb(144, 153, 147);">研究團隊</font>&nbsp;&nbsp;▌
-            <span>Research Team</span>
+                         <span>Partner</span>
 
           </div>
         </div>
