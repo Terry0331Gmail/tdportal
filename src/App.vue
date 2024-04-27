@@ -35,7 +35,7 @@
 
       <div class="container">
 
-        <div class="row" style="margin-top:20px;">
+        <div class="row" style="margin-top:100px;">
           <div class="col-lg-12 col-md-12 col-xs-12">
             <img ref="responsiveImage" src="@/assets/img/home/pg_1.png" alt="" usemap="#image-map" style="max-width:1082px;width:100%" @load="adjustCoords">
             <map name="image-map">
