@@ -414,7 +414,7 @@
           <div class="col-md-12">
             <!-- Portfolio Controller/Buttons -->
             <div class="controls text-center">
-              <a class="control active btn btn-common btn-effect" @click="scrollPage" data-filter="all">All</a>
+              <a class="control btn btn-common btn-effect active" @click="scrollPage" data-filter="all">All</a>
               <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".plan1">計畫一</a>
               <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".plan2">計畫二</a>
               <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".plan3">計畫三</a>
