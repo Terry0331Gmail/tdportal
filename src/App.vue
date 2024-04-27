@@ -159,10 +159,10 @@
           <div class="col-md-12">
             <!-- Portfolio Controller/Buttons -->
             <div class="controls text-center">
-              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".pland1">計畫一</a>
-              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".pland2">計畫二</a>
-              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".pland3">計畫三</a>
-              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".pland4">計畫四</a>
+              <a class="control btn btn-common btn-effect"  @click="scrollPage" data-filter=".pland1">計畫一</a>
+              <a class="control btn btn-common btn-effect"  @click="scrollPage" data-filter=".pland2">計畫二</a>
+              <a class="control btn btn-common btn-effect"  @click="scrollPage" data-filter=".pland3">計畫三</a>
+              <a class="control btn btn-common btn-effect"  @click="scrollPage" data-filter=".pland4">計畫四</a>
             </div>
             <!-- Portfolio Controller/Buttons Ends-->
           </div>
@@ -726,8 +726,12 @@
 
 </style>
 <script>
-    import { WOW } from 'wowjs'
-    import mixitup from 'mixitup';
+  import { WOW } from 'wowjs'
+  import mixitup from 'mixitup';
+  import 'bootstrap'
+  import $ from 'jquery';
+
+  import 'bootstrap/dist/css/bootstrap.min.css'
     export default {
         data() {
             return {
@@ -738,6 +742,10 @@
         },
         async mounted() {
             //document.body.style.fontFamily = "'標楷體', 'Microsoft JhengHei', sans-serif";
+            // 初始化 Bootstrap 的 JavaScript 功能
+            $('.navbar-toggler').on('click', function () {
+              $('.collapse').toggleClass('show');
+            });
             this.$nextTick(() => {
                 new WOW().init();
                 this.getOriginalCoords(); // 獲取原始坐標值
