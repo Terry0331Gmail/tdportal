@@ -1056,6 +1056,11 @@ button:focus {
   background: transparent;
 }
 
+  .controls .mixitup-control-active {
+    color: #F97794 !important;
+    border-color: #F97794;
+    background: transparent;
+  }
 
 .controls .btn {
   text-transform: uppercase;

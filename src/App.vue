@@ -414,7 +414,7 @@
           <div class="col-md-12">
             <!-- Portfolio Controller/Buttons -->
             <div class="controls text-center">
-              <a class="control btn btn-common btn-effect active" @click="scrollPage" data-filter="all">All</a>
+              <a class="control btn btn-common btn-effect mixitup-control-active" @click="scrollPage" data-filter="all">All</a>
               <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".plan1">計畫一</a>
               <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".plan2">計畫二</a>
               <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".plan3">計畫三</a>
@@ -566,7 +566,14 @@
           </div>
         </div>
       </div>
-      <div id="teams" class="container" data-ref="container-1">
+      
+    </section>
+    <!-- blog Section End -->
+    <br>
+    <section id="teams" class="section">
+      <!-- Container Starts -->
+
+      <div  class="container" data-ref="container-1">
         <div class="section-header">
           <div class="section-title">
             ▌&nbsp;&nbsp;<font style="color: rgb(144, 153, 147);">研究團隊</font>&nbsp;&nbsp;▌
@@ -578,7 +585,7 @@
           <div class="col-md-12">
             <!-- Portfolio Controller/Buttons -->
             <div class="controls text-center">
-              <a class="control active btn btn-common btn-effect" @click="scrollPage" data-filter="all">All</a>
+              <a class="control btn btn-common btn-effect mixitup-control-active" @click="scrollPage" data-filter="all">All</a>
               <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".school">學校</a>
               <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".partner">醫院</a>
               <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".ngo">機構</a>
@@ -656,14 +663,12 @@
 
       </div>
     </section>
-    <!-- blog Section End -->
-    <br>
-    <!-- Floating bar at the bottom -->
-    <div class="footer fixed-bottom text-center p-2">
-      <span id="gotop" onclick="window.scrollTo({top: 0, behavior: 'smooth'});" data-toggle="tooltip" class="gotop_pulic" data-placement="top" title="最上方" data-class="tooltip-custom">▲</span>
-      <span id="gobottom" onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});" data-toggle="tooltip" class="gotop_pulic" data-placement="top" title="最下方" data-class="tooltip-custom">▼</span>
-    </div>
-  </div>
+        <!-- Floating bar at the bottom -->
+        <div class="footer fixed-bottom text-center p-2">
+          <span id="gotop" onclick="window.scrollTo({top: 0, behavior: 'smooth'});" data-toggle="tooltip" class="gotop_pulic" data-placement="top" title="最上方" data-class="tooltip-custom">▲</span>
+          <span id="gobottom" onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});" data-toggle="tooltip" class="gotop_pulic" data-placement="top" title="最下方" data-class="tooltip-custom">▼</span>
+        </div>
+      </div>
 </template>
 <style scoped src="@/assets/css/bootstrap2.css">
 </style>
