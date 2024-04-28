@@ -5,7 +5,7 @@
 
       <nav class="navbar navbar-expand-md fixed-top  scrolling-navbar bg-white menu-bg">
         <div class="container">
-          <img src='@/assets/images/logo.png' style="width:100px">
+          <a href="#home" ><img src='@/assets/images/logo.png' style="width:100px"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="lni-menu"></i>
           </button>
@@ -24,18 +24,32 @@
                 <a class="nav-link page-scroll" href="#portfolios">活動照片</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#teams">研究團隊</a>
+                <a class="nav-link page-scroll" href="#teams">計劃團隊</a>
               </li>
 
 
             </ul>
           </div>
         </div>
+        
       </nav>
 
-      <div class="container">
-
-        <div class="row" style="margin-top:100px;">
+   
+      <div id="home" class="container" >
+        <div style="margin-top:120px">
+          <div class="footer text-center" style="height:50px">
+            <h3>數位偏鄉早期療育之智慧模式的建構與實踐</h3>
+          </div>
+          <carousel :per-page="1" :autoplay="true" :loop="true" autoplay-delay="4000">
+            <slide v-for="(item, index) in carouselItems" :key="index">
+              <div class="card">
+                <img :src="item.image" alt="" style="width:100%">
+              </div>
+            </slide>
+          </carousel>
+        </div>
+        
+        <div class="row" >
           <div class="col-lg-12 col-md-12 col-xs-12">
             <img ref="responsiveImage" src="@/assets/img/home/pg_1.png" alt="" usemap="#image-map" style="max-width:1082px;width:100%" @load="adjustCoords">
             <map name="image-map">
@@ -576,8 +590,8 @@
       <div  class="container" data-ref="container-1">
         <div class="section-header">
           <div class="section-title">
-            ▌&nbsp;&nbsp;<font style="color: rgb(144, 153, 147);">研究團隊</font>&nbsp;&nbsp;▌
-            <span>Partner</span>
+            ▌&nbsp;&nbsp;<font style="color: rgb(144, 153, 147);">計劃團隊</font>&nbsp;&nbsp;▌
+            <span>Team</span>
 
           </div>
         </div>
@@ -652,15 +666,19 @@
 
         </div>
 
-
-        <div class="row" style="border:1px;margin-top:100px">
-          <div class="col-lg-12 col-md-12 col-xs-12">
+        
+        <div class="row" style="margin-top:100px">
+          
+          <div class="col-lg-12 col-md-12 col-xs-12 text-center">
+            <hr>
             <div class="wow fadeInDown" style="margin-bottom:0px" data-wow-delay="0.2s">
               <img src='@/assets/img/home/ilogo.png' style="height:100%">
             </div>
+            <hr>
           </div>
+          
         </div>
-
+        
       </div>
     </section>
         <!-- Floating bar at the bottom -->
@@ -731,21 +749,39 @@
 <script>
   import { WOW } from 'wowjs'
   import mixitup from 'mixitup';
+  //import cmpSlides from "@/components/cmpSlides"
   import 'bootstrap'
   import $ from 'jquery';
-
+  import { Carousel, Slide } from 'vue-carousel';
 
   export default {
+    components: {
+      Carousel,
+      Slide
+    },
     data() {
       return {
-
-        originalCoords: null // 原始坐標值
+        originalCoords: null, // 原始坐標值
+        currentIndex:0,
+        carouselItems: [
+          {
+            image: require(`@/assets/img/slider/bg-1.jpg`),
+          },
+          {
+            image: require(`@/assets/img/slider/bg-2.jpg`),
+          },
+          {
+            image: require(`@/assets/img/slider/bg-3.jpg`),
+          }
+        ],
+        
       };
 
     },
     async mounted() {
       //document.body.style.fontFamily = "'標楷體', 'Microsoft JhengHei', sans-serif";
       // 初始化 Bootstrap 的 JavaScript 功能
+      
       $('.navbar-toggler').on('click', function () {
         $('.collapse').toggleClass('show');
       });
@@ -861,7 +897,8 @@
             behavior: "auto" // 平滑捲動效果
           });
         }, 1000); // 在捲動完成後等待500毫秒再向上滾動，這個時間可以根據需要調整
-      }
+      },
+  
 
     }
   }
