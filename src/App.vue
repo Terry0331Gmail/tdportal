@@ -24,7 +24,7 @@
                 <a class="nav-link page-scroll" href="#portfolios">活動照片</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#teams">計劃團隊</a>
+                <a class="nav-link page-scroll" href="#teams">計畫團隊</a>
               </li>
 
 
@@ -173,10 +173,10 @@
           <div class="col-md-12">
             <!-- Portfolio Controller/Buttons -->
             <div class="controls text-center">
-              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".pland1">計畫一</a>
-              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".pland2">計畫二</a>
-              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".pland3">計畫三</a>
-              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".pland4">計畫四</a>
+              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".pland1">子計畫一</a>
+              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".pland2">子計畫二</a>
+              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".pland3">子計畫三</a>
+              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".pland4">子計畫四</a>
             </div>
             <!-- Portfolio Controller/Buttons Ends-->
           </div>
