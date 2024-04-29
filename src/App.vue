@@ -429,10 +429,10 @@
             <!-- Portfolio Controller/Buttons -->
             <div class="controls text-center">
               <a class="control btn btn-common btn-effect mixitup-control-active" @click="scrollPage" data-filter="all">All</a>
-              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".plan1">計畫一</a>
-              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".plan2">計畫二</a>
-              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".plan3">計畫三</a>
-              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".plan4">計畫四</a>
+              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".plan1">子計畫一</a>
+              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".plan2">子計畫二</a>
+              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".plan3">子計畫三</a>
+              <a class="control btn btn-common btn-effect" @click="scrollPage" data-filter=".plan4">子計畫四</a>
             </div>
             <!-- Portfolio Controller/Buttons Ends-->
           </div>
