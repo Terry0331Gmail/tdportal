@@ -5,7 +5,7 @@
 
       <nav class="navbar navbar-expand-md fixed-top  scrolling-navbar bg-white menu-bg">
         <div class="container">
-          <a href="#home" ><img src='@/assets/images/logo.png' style="width:100px"></a>
+          <a href="#home"><img src='@/assets/images/logo.png' style="width:100px"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="lni-menu"></i>
           </button>
@@ -31,25 +31,26 @@
             </ul>
           </div>
         </div>
-        
+
       </nav>
 
-   
-      <div id="home" class="container" >
-        <div style="margin-top:120px">
-          <div class="footer text-center" style="height:50px">
-            <h3>數位偏鄉早期療育之智慧模式的建構與實踐</h3>
-          </div>
-          <carousel :per-page="1" :autoplay="true" :loop="true" autoplay-delay="4000">
-            <slide v-for="(item, index) in carouselItems" :key="index">
-              <div class="card">
-                <img :src="item.image" alt="" style="width:100%">
-              </div>
-            </slide>
-          </carousel>
-        </div>
-        
-        <div class="row" >
+
+      <div id="home" style="margin-top:120px">
+        <carousel :per-page="1" :autoplay="true" :loop="true" autoplay-delay="4000">
+          <slide v-for="(item, index) in carouselItems" :key="index">
+            <div class="card">
+              <img :src="item.image" alt="" style="width:100%">
+            </div>
+          </slide>
+        </carousel>
+      </div>
+
+      <div style="text-align:center;margin-top:100px;">
+        <h3>數位偏鄉早期療育之智慧模式的建構與實踐</h3>
+      </div>
+      <div  class="container">
+
+        <div class="row">
           <div class="col-lg-12 col-md-12 col-xs-12">
             <img ref="responsiveImage" src="@/assets/img/home/pg_1.png" alt="" usemap="#image-map" style="max-width:1082px;width:100%" @load="adjustCoords">
             <map name="image-map">
@@ -75,7 +76,7 @@
         <div class="section-header">
           <div class="section-title">
             ▌&nbsp;&nbsp;<font style="color: rgb(144, 153, 147);">計劃簡介</font>&nbsp;&nbsp;▌
-            <span>About</span>
+            <span>About Us</span>
           </div>
         </div>
         <div class="row">
